@@ -32,6 +32,10 @@ Instance segmentation : différencier tous les objets dans la scène
 
     __IMAGES__
     - charger des images en couleurs sous forme d'images en niveaux de gris ou sous forme d'images en couleur
+    __NOTE IMPORTANTE__: si votre notebook tourne sans fin, insérer au tout début du notebook la ligne :
+
+%matplotlib auto
+
     - Pour les images chargées en couleurs BGR, les convertir en HSV et en YUV
     - Chercher la différence entre ses 3 représentations
     - Choisir 5 images contenant des flammes (exemples : bougie, feu de cheminée, incendie, etc.) et 5 images sans flammes, les sauver dans un sous-répertoire *images*
@@ -57,6 +61,6 @@ Instance segmentation : différencier tous les objets dans la scène
 
 
     __SEMANTIC SEGMENTATION__
-    - Testez la détection avec labels sur une image de votre choix ([ici le code](https://towardsdatascience.com/object-detection-with-less-than-10-lines-of-code-using-python-2d28eebc5b11)
+    - Testez la détection avec labels sur une image de votre choix [(ici le code)](https://towardsdatascience.com/object-detection-with-less-than-10-lines-of-code-using-python-2d28eebc5b11)
 
 
