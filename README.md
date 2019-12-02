@@ -27,14 +27,36 @@ Object tracking : suivre des objets dans une vidéo
 Semantic segmentation : attribuer chaque pixel à un objet identifié
 Instance segmentation : différencier tous les objets dans la scène
 
-* Installez la bibliothèque opencv sous Python
-* Quelques pistes
-    - Faire charger des images et explorer les espaces de couleurs
-    - Choisir des images de feu
-    - Utiliser les espaces de couleur pour segmenter des images de feu
-    - Faire calculer des gradients
-    - Revoir les scripts de test de Petronor Fournos
-    - Revoir le test de GoTurn
-    - Proposez la détection avec labels https://towardsdatascience.com/object-detection-with-less-than-10-lines-of-code-using-python-2d28eebc5b11
+* Installez la bibliothèque opencv sous Python (__ATTENTION__ : passez par pip et installez opencv-python)
+* Quelques thèmes à explorer dans l'ordre avec les fonctions OpenCV :
+
+    __IMAGES__
+    - charger des images en couleurs sous forme d'images en niveaux de gris ou sous forme d'images en couleur
+    - Pour les images chargées en couleurs BGR, les convertir en HSV et en YUV
+    - Chercher la différence entre ses 3 représentations
+    - Choisir 5 images contenant des flammes (exemples : bougie, feu de cheminée, incendie, etc.) et 5 images sans flammes, les sauver dans un sous-répertoire *images*
+    - En utilisant la bibliothèque python *glob*, appliquer une fonction de changement de taille d'image d'opencv à toutes les images précédentes et sauvegarder les images avec leur nouvelle taille dans le répertoire images avec un suffixe "_resized" et dans un encodage de votre choix (exemples : jpg, png, etc.). La fonction pourra soit réduire la taille en pourcentage, soit réduire indépendamment hauteur et largeur de l'image
+    - Réfléchir à comment utiliser les espaces de couleur pour segmenter les images contenant des flammes pour isoler les zones contenant les flammes
+    - Fabriquer des images binaires à partir de la segmentation précédente
+    
+    __VIDEOS__
+
+    - Récupérer une vidéo contenant des flammes
+    - Charger la vidéo dans opencv et la faire jouer dans une fenêtre
+    - Appliquer la segmentation binaire précédente à chaque frame et afficher la vidéo correspondante
+
+    __OBJECT TRACKING__
+    - Par groupes de 4
+    - 4 méthodes à choisir entre :
+        + CSRT
+        + KCF
+        + MOSSE
+        + GoTurn
+    - Partir d'une courte viédo contenant des personnages se déplaçant (si pas d'idées, cherchez chaplin.mp4 ou filmez-vous entre vous)
+    - Appliquez une des 4 méthodes de tracking
+
+
+    __SEMANTIC SEGMENTATION__
+    - Testez la détection avec labels sur une image de votre choix ([ici le code](https://towardsdatascience.com/object-detection-with-less-than-10-lines-of-code-using-python-2d28eebc5b11)
 
 
