@@ -29,7 +29,10 @@ Instance segmentation : différencier tous les objets dans la scène
 
 * Installez la bibliothèque opencv sous Python 
 __ATTENTION__ : passez par pip et installez opencv-python
+
 __Alternative__ : installez avec conda install -c anaconda py-opencv
+
+__Autre alternative__ : installez avec pip install pyopencv
 
 * Quelques thèmes à explorer dans l'ordre avec les fonctions OpenCV :
 
