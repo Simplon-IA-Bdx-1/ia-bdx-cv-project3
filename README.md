@@ -58,6 +58,7 @@ __Autre alternative__ : installez avec pip install pyopencv
     - Récupérer une vidéo contenant des flammes
     - Charger la vidéo dans opencv et la faire jouer dans une fenêtre
     - Appliquer la segmentation binaire précédente à chaque frame et afficher la vidéo correspondante
+    - Une façon de le faire [ici](https://github.com/Simplon-IA-Bdx-1/opencv-fire-segmentation)
 
     __OBJECT TRACKING__
     - Par groupes de 4
